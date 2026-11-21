@@ -1,0 +1,723 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ingeniería en Computación</title>
+    <link rel="stylesheet" href="estilo.css" />
+  </head>
+  <body>
+    <!-- 2. MENÚ PRINCIPAL FLOTANTE -->
+    <header class="navbar">
+      <div class="brand-container">
+        <div class="logo-pill">
+          <img src="Logo_UNHSJM.png" alt="Logo UNHSJM" />
+        </div>
+        <div class="brand-text">
+          <h2>Ingeniería en Computación</h2>
+          <span>DCByT • UNHSJM</span>
+        </div>
+      </div>
+
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#descripcion">Carrera</a></li>
+          <li><a href="#organigrama">Organigrama</a></li>
+          <li><a href="#modalidades">Modalidades</a></li>
+          <li><a href="#perfiles">Perfiles</a></li>
+          <li><a href="#areas">Áreas</a></li>
+          <li><a href="#plan">Plan 2018</a></li>
+          <li><a href="#resenas">Reseñas</a></li>
+          <li><a href="#contacto" class="nav-cta">Consultas</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- 1. CARRUSEL INFORMATIVO + PANEL INSTITUCIONAL -->
+    <section id="inicio" class="hero-wrapper">
+      <div class="hero-grid">
+        <!-- Carrusel Izquierdo -->
+        <div class="carousel">
+          <div class="carousel-slide active">
+            <span class="chip"
+              >Universidad Nacional Héroes de San José de las Mulas</span
+            >
+            <h1>
+              Ingeniería en <span class="texto-gradiente">Computación</span>
+            </h1>
+            <p>
+              Dirección de Ciencias Básicas y Tecnología (DCByT). Formamos
+              ingenieros capaces de diseñar software robusto, gestionar
+              infraestructuras críticas y liderar la transformación digital.
+            </p>
+            <div class="hero-actions">
+              <a href="#plan" class="btn-primary">Explorar Pensum Oficial</a>
+              <a href="#modalidades" class="btn-outline">Ver Turnos</a>
+            </div>
+          </div>
+
+          <div class="carousel-slide">
+            <span class="chip">Plan de Estudio 2018 • 10 Semestres</span>
+            <h1>
+              Inteligencia Artificial,
+              <span class="texto-gradiente">Redes y Big Data</span>
+            </h1>
+            <p>
+              Domina algoritmos avanzados, arquitectura de computadoras,
+              programación móvil y web, ciberseguridad y robótica aplicada.
+            </p>
+            <div class="hero-actions">
+              <a href="#areas" class="btn-primary">Áreas de Estudio</a>
+              <a href="#perfiles" class="btn-outline">Perfil del Egresado</a>
+            </div>
+          </div>
+
+          <div class="carousel-slide">
+            <span class="chip">Vinculación Laboral Real</span>
+            <h1>
+              Laboratorios y
+              <span class="texto-gradiente">Prácticas DCByT</span>
+            </h1>
+            <p>
+              Integra la teoría con la práctica mediante tres niveles de
+              Prácticas de Familiarización y Profesionales acompañados por el
+              cuerpo docente de la DCByT.
+            </p>
+            <div class="hero-actions">
+              <a href="#organigrama" class="btn-primary">Autoridades DCByT</a>
+              <a href="#contacto" class="btn-outline">Hacer Consulta</a>
+            </div>
+          </div>
+
+          <div class="carousel-controls">
+            <button
+              class="ctrl-btn"
+              onclick="cambiarSlide(-1)"
+              aria-label="Anterior"
+            >
+              &#8592;
+            </button>
+            <div class="dots" id="carousel-dots">
+              <span class="dot active" onclick="irASlide(0)"></span>
+              <span class="dot" onclick="irASlide(1)"></span>
+              <span class="dot" onclick="irASlide(2)"></span>
+            </div>
+            <button
+              class="ctrl-btn"
+              onclick="cambiarSlide(1)"
+              aria-label="Siguiente"
+            >
+              &#8594;
+            </button>
+          </div>
+        </div>
+
+        <!-- Tarjeta Derecha con Logo y Datos Clave -->
+        <aside class="hero-card">
+          <div class="hero-logo-showcase">
+            <img src="Logo_UNHSJM.png" alt="Logo Oficial UNHSJM" />
+          </div>
+          <div class="stats-grid">
+            <div class="stat-box">
+              <strong>5 Años</strong>
+              <span>10 Semestres</span>
+            </div>
+            <div class="stat-box">
+              <strong>2 Turnos</strong>
+              <span>Diurno y Dominical</span>
+            </div>
+            <div class="stat-box stat-full">
+              <strong>Plan 2018</strong>
+              <span>Malla Actualizada</span>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <main class="container">
+      <!-- 4. DESCRIPCIÓN DE LA CARRERA -->
+      <section id="descripcion" class="section">
+        <div class="section-header">
+          <h2 class="section-title">Descripción de la Carrera</h2>
+        </div>
+        <div class="desc-detalles">
+          <p>
+            La carrera de <strong>Ingeniería en Computación</strong> de la
+            Universidad Nacional Héroes de San José de las Mulas (UNHSJM), tiene
+            como objetivo formar ingenieros en computación capaces de diseñar,
+            implementar y gestionar sistemas y aplicaciones informáticas
+            innovadoras, atendiendo las necesidades tecnológicas de diversos
+            sectores industriales y empresariales.
+          </p>
+        </div>
+      </section>
+
+      <!-- 3. ORGANIGRAMA DE LA UNIVERSIDAD -->
+      <section id="organigrama" class="section">
+        <div class="section-header">
+          <h2 class="section-title">Organigrama Institucional (DCByT)</h2>
+        </div>
+
+        <div class="org-wrapper">
+          <!-- Nivel 1 -->
+          <div class="org-row">
+            <div class="org-node node-dir">
+              <span class="node-role">Dirección General</span>
+              <strong>Arlen Gutiérrez</strong>
+              <p>
+                Directora General del Área de Ciencias Básicas y Tecnología
+                (DCByT)
+              </p>
+            </div>
+          </div>
+
+          <div class="connector-v"></div>
+
+          <!-- Nivel 2 -->
+          <div class="org-row">
+            <div class="org-node node-sec">
+              <span class="node-role">Secretaría Académica</span>
+              <strong>Lic. Xiomara Cantillano</strong>
+              <p>Secretaria Académica DCByT</p>
+            </div>
+          </div>
+
+          <div class="connector-v"></div>
+          <div class="connector-h"></div>
+
+          <!-- Nivel 3 -->
+          <div class="org-grid-4">
+            <div class="org-node node-coord activo-comp">
+              <span class="node-role">Coordinación de Carrera</span>
+              <strong>MSc. Sonia Guillén</strong>
+              <p>Directora de la Carrera: Ingeniería en Computación</p>
+            </div>
+            <div class="org-node node-coord">
+              <span class="node-role">Coordinación de Carrera</span>
+              <strong>Lic. Gladys Aguilar</strong>
+              <p>Directora de la Carrera: Ingeniería en Sistemas</p>
+            </div>
+            <div class="org-node node-coord">
+              <span class="node-role">Coordinación de Carrera</span>
+              <strong>Ing. Óscar Ruiz</strong>
+              <p>Director de la Carrera: Ingeniería en Biotecnología</p>
+            </div>
+            <div class="org-node node-coord">
+              <span class="node-role">Soporte Técnico</span>
+              <strong>Ing. Aldo Pitty</strong>
+              <p>Encargado de Laboratorios</p>
+            </div>
+          </div>
+
+          <div class="connector-v"></div>
+
+          <!-- Nivel 4 -->
+          <div class="org-row">
+            <div class="org-node node-docentes">
+              <strong>Cuerpo Docente de la DCByT</strong>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 5. MODALIDADES, DURACIÓN Y HORARIOS -->
+      <section id="modalidades" class="section">
+        <div class="section-header">
+          <h2 class="section-title">Modalidades, Duración y Horarios</h2>
+        </div>
+
+        <div class="mod-grid">
+          <article class="mod-card">
+            <div class="mod-top">
+              <span class="mod-badge">Regular</span>
+              <span class="mod-duration">5 Años • 10 Semestres</span>
+            </div>
+            <h3>Turno Diurno</h3>
+            <ul class="mod-list">
+              <li><strong>Días de clase:</strong> Lunes a Viernes.</li>
+              <li><strong>Horario:</strong> 7:00 a.m. – 5:30 p.m.</li>
+            </ul>
+          </article>
+
+          <article class="mod-card">
+            <div class="mod-top">
+              <span class="mod-badge badge-dom">Por Encuentros</span>
+              <span class="mod-duration">5 Años • 10 Semestres</span>
+            </div>
+            <h3>Turno Dominical</h3>
+            <ul class="mod-list">
+              <li><strong>Días de clase:</strong> Domingos.</li>
+              <li><strong>Horario:</strong> 7:30 a.m. – 4:30 p.m.</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <!-- 6. PERFILES DE SALIDA -->
+      <section id="perfiles" class="section">
+        <div class="section-header">
+          <span class="section-tag">Competencias Profesionales</span>
+          <h2 class="section-title">Perfil del Egresado</h2>
+        </div>
+
+        <div class="perfiles-grid">
+          <div class="perfil-card">
+            <span class="perfil-num">01</span>
+            <h3>Análisis y Diseño de Sistemas</h3>
+            <p>
+              Habilidad para el análisis y diseño de sistemas de información
+              orientados a optimizar procesos empresariales.
+            </p>
+          </div>
+          <div class="perfil-card">
+            <span class="perfil-num">02</span>
+            <h3>Gestión de Proyectos de TI</h3>
+            <p>
+              Conocimientos sólidos en gestión, formulación y evaluación de
+              proyectos de tecnología de la información.
+            </p>
+          </div>
+          <div class="perfil-card">
+            <span class="perfil-num">03</span>
+            <h3>Infraestructura Tecnológica</h3>
+            <p>
+              Capacidad para implementar, administrar y mantener
+              infraestructuras tecnológicas, redes y servidores.
+            </p>
+          </div>
+          <div class="perfil-card">
+            <span class="perfil-num">04</span>
+            <h3>Ciberseguridad y Protección</h3>
+            <p>
+              Competencias especializadas en ciberseguridad, auditoría y
+              protección integral de datos organizacionales.
+            </p>
+          </div>
+          <div class="perfil-card">
+            <span class="perfil-num">05</span>
+            <h3>Big Data y Análisis Predictivo</h3>
+            <p>
+              Habilidad para trabajar con grandes volúmenes de datos y realizar
+              análisis predictivo para la toma de decisiones.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- 7. ÁREAS DE ESTUDIO -->
+      <section id="areas" class="section">
+        <div class="section-header">
+          <span class="section-tag">Ejes Formativos</span>
+          <h2 class="section-title">Áreas de Estudio</h2>
+        </div>
+
+        <div class="areas-grid">
+          <div class="area-pill">
+            <h4>Análisis y Diseño de Sistemas de Información</h4>
+          </div>
+          <div class="area-pill">
+            <h4>Gestión de Proyectos de TI</h4>
+          </div>
+          <div class="area-pill">
+            <h4>Infraestructura de Tecnologías de la Información</h4>
+          </div>
+          <div class="area-pill">
+            <h4>Seguridad de la Información</h4>
+          </div>
+          <div class="area-pill">
+            <h4>Análisis de Datos y Big Data</h4>
+          </div>
+        </div>
+      </section>
+
+      <!-- 8. PLAN DE ESTUDIO OFICIAL -->
+      <section id="plan" class="section">
+        <div class="section-header">
+          <h2 class="section-title">Plan de Estudio (Plan 2018)</h2>
+        </div>
+
+        <!-- Filtro rápido por Año -->
+        <div class="year-filters">
+          <button class="year-btn active" onclick="filtrarAnio('todos', this)">
+            Todos los Años
+          </button>
+          <button class="year-btn" onclick="filtrarAnio('anio-1', this)">
+            I Año
+          </button>
+          <button class="year-btn" onclick="filtrarAnio('anio-2', this)">
+            II Año
+          </button>
+          <button class="year-btn" onclick="filtrarAnio('anio-3', this)">
+            III Año
+          </button>
+          <button class="year-btn" onclick="filtrarAnio('anio-4', this)">
+            IV Año
+          </button>
+          <button class="year-btn" onclick="filtrarAnio('anio-5', this)">
+            V Año
+          </button>
+        </div>
+
+        <div class="plan-content active">
+          <!-- I AÑO -->
+          <div class="anio-bloque anio-1">
+            <div class="col-anio">
+              <div class="col-header">Año</div>
+              <strong>I AÑO</strong>
+            </div>
+            <div class="col-semestre">
+              <div class="col-header">Semestre I</div>
+              <ul class="lista-materias">
+                <li>Matemática Introductoria</li>
+                <li>Técnicas y Estrategias de Comunicación</li>
+                <li>Filosofía</li>
+                <li>Geometría Analítica</li>
+                <li>Historia de Nicaragua</li>
+              </ul>
+            </div>
+            <div class="col-semestre">
+              <div class="col-header">Semestre II</div>
+              <ul class="lista-materias">
+                <li>Algoritmos</li>
+                <li>Composición y Redacción Técnica</li>
+                <li>Género en la Vida Cotidiana</li>
+                <li>Cálculo I</li>
+                <li>Estadística (Descriptiva e Inferencial)</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- II AÑO -->
+          <div class="anio-bloque anio-2">
+            <div class="col-anio">
+              <div class="col-header">Año</div>
+              <strong>II AÑO</strong>
+            </div>
+            <div class="col-semestre">
+              <div class="col-header">Semestre III</div>
+              <ul class="lista-materias">
+                <li>Programación</li>
+                <li>Estructuras Discretas</li>
+                <li>Física I</li>
+                <li>Cálculo II</li>
+                <li>Libre I</li>
+                <li>Álgebra Lineal para Computación</li>
+              </ul>
+            </div>
+            <div class="col-semestre">
+              <div class="col-header">Semestre IV</div>
+              <ul class="lista-materias">
+                <li>Estructura de Datos</li>
+                <li>Bases de Datos I</li>
+                <li>Física II</li>
+                <li>Cálculo III</li>
+                <li>Métodos y Técnicas de Investigación</li>
+                <li>Análisis Numéricos para Ingenieros</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- III AÑO -->
+          <div class="anio-bloque anio-3">
+            <div class="col-anio">
+              <div class="col-header">Año</div>
+              <strong>III AÑO</strong>
+            </div>
+            <div class="col-semestre">
+              <div class="col-header">Semestre V</div>
+              <ul class="lista-materias">
+                <li>Programación Orientada a Objetos</li>
+                <li>Bases de Datos II</li>
+                <li>Circuitos Eléctricos</li>
+                <li>Metodología de la Investigación</li>
+                <li>Prácticas de Familiarización y Profesionales I</li>
+              </ul>
+            </div>
+            <div class="col-semestre">
+              <div class="col-header">Semestre VI</div>
+              <ul class="lista-materias">
+                <li>Ingeniería de Requerimientos</li>
+                <li>Gráfica Asistida por Computadora</li>
+                <li>Sistemas Digitales</li>
+                <li>Simulación por Computadoras</li>
+                <li>Optativa I</li>
+                <li>Prácticas de Familiarización y Profesionales II</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- IV AÑO -->
+          <div class="anio-bloque anio-4">
+            <div class="col-anio">
+              <div class="col-header">Año</div>
+              <strong>IV AÑO</strong>
+            </div>
+            <div class="col-semestre">
+              <div class="col-header">Semestre VII</div>
+              <ul class="lista-materias">
+                <li>Análisis y Diseño</li>
+                <li>Sistemas Operativos</li>
+                <li>Arquitectura de Computadoras I</li>
+                <li>Cultura de Paz</li>
+                <li>Lenguajes, Compiladores e Intérpretes</li>
+                <li>Prácticas de Familiarización y Profesionales III</li>
+              </ul>
+            </div>
+            <div class="col-semestre">
+              <div class="col-header">Semestre VIII</div>
+              <ul class="lista-materias">
+                <li>Ingeniería del Software I</li>
+                <li>Diseño Asistido por Computadoras</li>
+                <li>Arquitectura de Computadoras II</li>
+                <li>Análisis Algorítmico Avanzado</li>
+                <li>Redes de Computadoras</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- V AÑO -->
+          <div class="anio-bloque anio-5">
+            <div class="col-anio">
+              <div class="col-header">Año</div>
+              <strong>V AÑO</strong>
+            </div>
+            <div class="col-semestre">
+              <div class="col-header">Semestre IX</div>
+              <ul class="lista-materias">
+                <li>Ingeniería del Software II</li>
+                <li>Programación Móvil</li>
+                <li>Libre II (Ingeniería Económica)</li>
+                <li>Sistemas Distribuidos</li>
+                <li>Sistemas de Control</li>
+                <li>Optativa II (Telemática)</li>
+              </ul>
+            </div>
+            <div class="col-semestre">
+              <div class="col-header">Semestre X</div>
+              <ul class="lista-materias">
+                <li>Formulación y Evaluación de Proyectos Computacionales</li>
+                <li>Programación Web</li>
+                <li>Inteligencia Artificial</li>
+                <li>Robótica</li>
+                <li>
+                  Libre III (Tendencias Tecnológicas y Tecnología Emergente)
+                </li>
+                <li>Formas de Culminación de Estudios</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 9. RESEÑAS DE ESTUDIANTES Y EGRESADOS -->
+      <section id="resenas" class="section">
+        <div class="section-header">
+          <span class="section-tag">Experiencias Reales</span>
+          <h2 class="section-title">Reseñas de Estudiantes y Egresados</h2>
+        </div>
+
+        <div class="reviews-grid">
+          <div class="review-card">
+            <div class="stars">★★★★★</div>
+            <p class="quote">
+              "El enfoque práctico en arquitectura de computadoras, sistemas
+              operativos y redes me dio la seguridad necesaria para administrar
+              servidores empresariales apenas egresé de la carrera."
+            </p>
+            <div class="author">
+              <strong>Engelbert Josué Morales</strong>
+              <span>Egresado • Administrador de Infraestructura TI</span>
+            </div>
+          </div>
+
+          <div class="review-card">
+            <div class="stars">★★★★★</div>
+            <p class="quote">
+              "Estudiar en la DCByT ha sido una gran experiencia. Los docentes
+              nos guían paso a paso desde lógica de programación y estructuras
+              de datos hasta el desarrollo de aplicaciones móviles y web."
+            </p>
+            <div class="author">
+              <strong>Valeria Alejandra Castillo</strong>
+              <span>Estudiante de V Año • Ingeniería en Computación</span>
+            </div>
+          </div>
+
+          <div class="review-card">
+            <div class="stars">★★★★★</div>
+            <p class="quote">
+              "La formación en ingeniería de software, análisis de datos y
+              gestión de proyectos me permitió liderar mi propio equipo de
+              desarrollo tecnológico en el sector privado."
+            </p>
+            <div class="author">
+              <strong>Ing. Rodrigo Javier Salgado</strong>
+              <span>Egresado UNHSJM • Líder Técnico de Software</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 10. FORMULARIO DE COMENTARIOS -->
+      <section id="contacto" class="section">
+        <div class="section-header">
+          <span class="section-tag">Atención Estudiantil</span>
+          <h2 class="section-title">Formulario de Comentarios y Consultas</h2>
+        </div>
+
+        <form class="form-card" onsubmit="enviarComentario(event)">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="nombre">Nombre completo</label>
+              <input
+                type="text"
+                id="nombre"
+                name="nombre"
+                placeholder="Ej. Ana Martínez"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="correo">Correo electrónico</label>
+              <input
+                type="email"
+                id="correo"
+                name="correo"
+                placeholder="correo@ejemplo.com"
+                required
+              />
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="modalidad-interes">Turno de interés</label>
+            <select id="modalidad-interes" name="modalidad">
+              <option value="Diurno">Turno Diurno (Lunes a Viernes)</option>
+              <option value="Dominical">
+                Turno Dominical (Por Encuentros)
+              </option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="mensaje">Comentario o consulta sobre la carrera</label>
+            <textarea
+              id="mensaje"
+              name="mensaje"
+              rows="4"
+              placeholder="Escribe tus dudas o comentarios aquí..."
+              required
+            ></textarea>
+          </div>
+
+          <button type="submit" class="btn-primary btn-full">
+            Enviar Comentario
+          </button>
+          <p id="mensaje-confirmacion" class="confirmacion"></p>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-inner">
+        <div class="logo-pill">
+          <img src="Logo_UNHSJM.png" alt="Logo UNHSJM" />
+        </div>
+        <p>&copy; 2026 Universidad Nacional Héroes de San José de las Mulas</p>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+
+    <script>
+      const SUPABASE_URL = "https://fqmfswpojbbuxcyumsdu.supabase.co";
+      const SUPABASE_ANON_KEY =
+        "sb_publishable_ddDNUyoWy2w10jMN2NYUig_QGduNW-m";
+      const supabaseClient = window.supabase.createClient(
+        SUPABASE_URL,
+        SUPABASE_ANON_KEY,
+      );
+
+      // 1. Control del Carrusel
+      let slideActual = 0;
+      const slides = document.querySelectorAll(".carousel-slide");
+      const dots = document.querySelectorAll(".dot");
+
+      function actualizarCarrusel() {
+        slides.forEach((s, idx) => {
+          s.classList.toggle("active", idx === slideActual);
+          dots[idx].classList.toggle("active", idx === slideActual);
+        });
+      }
+
+      function cambiarSlide(direccion) {
+        slideActual = (slideActual + direccion + slides.length) % slides.length;
+        actualizarCarrusel();
+      }
+
+      function irASlide(indice) {
+        slideActual = indice;
+        actualizarCarrusel();
+      }
+
+      setInterval(() => cambiarSlide(1), 6500);
+
+      // 2. Filtro por Año dentro del Plan de Estudio
+      function filtrarAnio(claseAnio, boton) {
+        document
+          .querySelectorAll(".year-btn")
+          .forEach((btn) => btn.classList.remove("active"));
+        boton.classList.add("active");
+
+        document.querySelectorAll(".anio-bloque").forEach((bloque) => {
+          if (claseAnio === "todos" || bloque.classList.contains(claseAnio)) {
+            bloque.style.display = "grid";
+          } else {
+            bloque.style.display = "none";
+          }
+        });
+      }
+
+      // 3. Envío de Formulario conectado a Supabase
+      async function enviarComentario(e) {
+        e.preventDefault();
+
+        const btnEnviar = e.target.querySelector('button[type="submit"]');
+        const confirmacion = document.getElementById("mensaje-confirmacion");
+
+        // Captura con los IDs específicos de index_2.html
+        const nombre = document.getElementById("nombre").value.trim();
+        const correo = document.getElementById("correo").value.trim();
+        const turno = document.getElementById("modalidad-interes").value;
+        const comentario = document.getElementById("mensaje").value.trim();
+
+        btnEnviar.disabled = true;
+        btnEnviar.textContent = "Enviando...";
+        confirmacion.style.color = "#38bdf8"; // Cian del tema oscuro
+        confirmacion.textContent =
+          "Guardando comentario en la base de datos...";
+
+        // Cambia "comentarios_unhsjm" por "comentarios_unhsjm_v2" si creaste la tabla nueva
+        const { error } = await supabaseClient
+          .from("comentarios_unhsjm")
+          .insert([{ nombre, correo, turno, comentario }]);
+
+        if (error) {
+          console.error("Error de Supabase:", error);
+          confirmacion.style.color = "#ef4444"; // Rojo del tema oscuro
+          confirmacion.textContent =
+            "Hubo un error al guardar el comentario. Verifica tu conexión o la clave API.";
+        } else {
+          confirmacion.style.color = "#4ade80"; // Verde confirmación del tema oscuro
+          confirmacion.textContent = `¡Gracias ${nombre}! Tu comentario ha sido guardado en la base de datos de Ingeniería en Computación (UNHSJM).`;
+          e.target.reset();
+        }
+
+        btnEnviar.disabled = false;
+        btnEnviar.textContent = "Enviar Comentario";
+      }
+    </script>
+  </body>
+</html>
